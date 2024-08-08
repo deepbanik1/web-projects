@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener('dragstart', function (e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>&lt;/&gt; Deep Banik</h1>
+            <nav>
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="section">
+        <h2><u>About Me</u></h2>
+        <img src="about.png" alt="About Image" class="project-image animate__animated animate__fadeInLeft">
+        <h3>My name is Deep Banik, and I live in Tripura.</h3>
+        <p>Tripura is a small and beautiful state in India, known for its lush green hills and serene environment. I am working towards becoming a professional developer and am dedicated to making a mark in the world of technology. I find great joy in gaining new experiences and working on various projects throughout my journey.</p>
+    </section>
+        
+    <section id="skills" class="section">
+        <h2><u>Skills</u></h2>
+        <img src="skills.jpeg" alt="Skill Image" class="project-image animate__animated animate__fadeInLeft">
+        <div class="skills-icons">
+            <img src="html.png" alt="HTML" class="skill-icon animate__animated animate__fadeInLeft">
+            <img src="css.png" alt="CSS" class="skill-icon animate__animated animate__fadeInLeft">
+            <img src="js.png" alt="JavaScript" class="skill-icon animate__animated animate__fadeInLeft">
+            <img src="python.png" alt="Python" class="skill-icon animate__animated animate__fadeInLeft">
+        </div>
+        <p>I created this site using HTML, JavaScript, and CSS </p>
+        <p>I intentionally included the Python logo because I plan to develop some projects with Python in the future and add them to the 'My Projects' section of this site</p>
+    </section>
+    <section id="projects" class="section">
+        <h2><u>My Projects</u></h2>
+        <img src="project.png" alt="Project Image" class="project-image animate__animated animate__fadeInLeft">
+        <div class="project">
+            <h3>Age Calculator</h3>
+            <p>I created this age calculator tab when I was learning HTML and JavaScript. You can use it.</p>
+            <label for="dob">Select your date of birth:</label>
+            <input type="date" id="dob">
+            <button class="project-button calculate-button" onclick="calculateAge()">Calculate</button>
+            <div id="results"></div>
+        </div>
+        <h4>When I have free time, I will add more interesting projects here 🤞</h4>
+    </section>
+    <section id="contact" class="section">
+        <h2><u>Contact Me</u></h2>
+        <form class="contact-form" onsubmit="showAlert(); return false;">
+            <input type="text" id="name" name="name" placeholder="Your Name" class="project-image animate__animated animate__fadeInLeft" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" class="project-image animate__animated animate__fadeInLeft" required>
+            <textarea id="message" name="message" placeholder="Your Message" class="project-image animate__animated animate__fadeInLeft" required></textarea>
+            <button type="submit" class="project-image animate__animated animate__fadeInLeft">Send</button>
+        </form>
+    </section>
+    <footer>
+        <h2><b><u>Contact Me</u></b></h2>
+        <div class="social-icons">
+            <a href="https://telegram.me/royaldwip"><img src="telegram.png" alt="Telegram"></a>
+            <a href="https://instagram.com/royaldwip"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+        <h5><b>&copy; 2024 Deep Banik All rights reserved.</b></h5>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
